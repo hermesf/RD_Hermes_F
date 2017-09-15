@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hermes.rd_hermes_flores.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.28"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reciclador"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.28"
+            android:padding="3dp"
+            android:scrollbars="vertical" />
+
+
+        <ProgressBar
+            android:id="@+id/ProgressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:max="10"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp"
+            android:visibility="gone">
+
+        </ProgressBar>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>
+
+
+
+
